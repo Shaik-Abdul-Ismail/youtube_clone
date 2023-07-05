@@ -1,0 +1,302 @@
+* {
+    padding: 0px;
+    margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  position: relative;
+}
+
+.tooltip {
+  position: absolute;
+  z-index: 1080;
+  display: block;
+  margin: 0; 
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  text-align: start;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  letter-spacing: normal;
+  word-break: normal;
+  word-spacing: normal;
+  white-space: normal;
+  line-break: auto;
+  font-size: 14px;
+  word-wrap: break-word;
+  opacity: 0;
+}
+
+.Exercises-YouTube {
+  font-family: Roboto, Arial, sans-serif;
+  padding-top: 57px;
+  padding-left: 72px;
+  background-color: #f9f9f9;
+}
+.Exercises-YouTube .header {
+  display: flex;
+  height: 57px;
+  border-bottom: 1px solid #dedede;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 100;
+}
+.Exercises-YouTube .left-section {
+  display: flex;
+  align-items: center;
+}
+.Exercises-YouTube .left-section .hamburger-menu {
+  height: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+  cursor: pointer;
+}
+.Exercises-YouTube .left-section .youtube-logo {
+  height: 20px;
+  cursor: pointer;
+}
+.Exercises-YouTube .middle-section {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  max-width: 470px;
+  margin-left: 60px;
+}
+.Exercises-YouTube .middle-section .search-button img {
+  height: 24px;
+}
+.Exercises-YouTube .middle-section .voice-search {
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Exercises-YouTube .middle-section .voice-search img {
+  height: 24px;
+}
+.Exercises-YouTube .right-section {
+  display: flex;
+  align-items: center;
+  width: 182px;
+  justify-content: space-between;
+  margin-right: 24px;
+  margin-left: 29px;
+  flex-shrink: 0;
+}
+.Exercises-YouTube .right-section .icon {
+  cursor: pointer;
+  height: 24px;
+}
+.Exercises-YouTube .right-section .my-channel {
+  height: 32px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 32px;
+}
+.Exercises-YouTube .notification-count {
+  background-color: #cc0000;
+  border-radius: 80px;
+  position: absolute;
+  top: -3px;
+  right: -7px;
+  color: white;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  padding: 0 5px;
+}
+.Exercises-YouTube .search-bar {
+  height: 40px;
+  flex: 1;
+  width: 0;
+  min-width: 0;
+  padding-left: 12px;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  border: 1px solid #cccccc;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  box-shadow: inset 0px 1px 2px #eeeeee;
+}
+.Exercises-YouTube .search-bar:focus {
+  outline: 1px solid #1f5cc6;
+  outline-offset: -1px;
+}
+.Exercises-YouTube .search-bar::placeholder {
+  color: #888888;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+.Exercises-YouTube .search-button {
+  height: 40px;
+  width: 64px;
+  border: 1px solid #cccccc;
+  border-left: none;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  background-color: #f7f7f7;
+  cursor: pointer;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Exercises-YouTube .search-button:hover {
+  background-color: #efefef;
+}
+.Exercises-YouTube .search-button:active {
+  background-color: #e8e8e8;
+}
+.Exercises-YouTube .sidebar {
+  position: fixed;
+  left: 0;
+  top: 56px;
+  bottom: 0;
+  background-color: white;
+  width: 72px;
+  padding-top: 5px;
+  z-index: 200;
+}
+.Exercises-YouTube .sidebar-link {
+  font-size: 10px;
+  height: 74px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.Exercises-YouTube .sidebar-link:hover {
+  background-color: #eeeeee;
+}
+.Exercises-YouTube .sidebar-link img {
+  height: 24px;
+  margin-bottom: 5px;
+}
+.Exercises-YouTube .tooltip {
+  background-color: rgba(96, 96, 96, 0.9);
+  color: white;
+  font-size: 12px;
+  padding: 8px;
+  border-radius: 2px;
+  position: absolute;
+  bottom: -50px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.Exercises-YouTube .tooltip-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.Exercises-YouTube .tooltip-container:hover .tooltip {
+  opacity: 1;
+}
+.Exercises-YouTube main {
+  min-height: 120vh;
+}
+.Exercises-YouTube .video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 8px;
+  row-gap: 16px;
+  padding: 20px;
+}
+
+@media (min-width: 870px) and (max-width: 1124px) {
+  .Exercises-YouTube .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1125px) {
+  .Exercises-YouTube .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+
+.Exercises-YouTube .thumbnail {
+  width: 100%;
+}
+.Exercises-YouTube .video-title {
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  width: 100%;
+  line-height: 20px;
+  margin-bottom: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+.Exercises-YouTube .channel-name,
+.Exercises-YouTube .video-stats {
+  font-size: 12px;
+  color: #606060;
+}
+.Exercises-YouTube .channel-name {
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+.Exercises-YouTube .channel-link {
+  text-decoration: none;
+  color: inherit;
+}
+.Exercises-YouTube .video-link {
+  text-decoration: none;
+  color: black;
+}
+.Exercises-YouTube .video-card {
+  padding: 4px;
+  vertical-align: top;
+}
+.Exercises-YouTube .video-info-grid {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+}
+.Exercises-YouTube .channel-profile-pic img {
+  width: 36px;
+  border-radius: 36px;
+  margin-top: 12px;
+}
+.Exercises-YouTube .thumbnail-container {
+  position: relative;
+}
+.Exercises-YouTube .video-time {
+  position: absolute;
+  bottom: 7px;
+  right: 4px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.9);
+  font-size: 12px;
+  padding: 2px 4px;
+  border-radius: 2px;
+  font-weight: 500;
+}
